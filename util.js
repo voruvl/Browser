@@ -10,6 +10,8 @@ function addStore(){
 
 function clearSite(){
 	storage.clear();
+	index=0;
+	showPage();
 }
 
 
@@ -43,7 +45,7 @@ function showPage() {
 		
 	}
 	document.write("<div class='page'>");
-	document.write("<form action='post' name='insert' >");
+	document.write("<form name='insert' >");
 	document.write("<input type='text' name='site' placeholder='Insert name site' value=''> <input type='button'");
 	document.write("name='exec' value='Add site' onclick='javascript:addStore()'>");
 	document.write("<input type='button'");
